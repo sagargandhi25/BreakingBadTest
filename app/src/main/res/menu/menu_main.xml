@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item-->
+<!--        android:id="@+id/all"-->
+<!--        android:title="All" />-->
+    <item
+        android:id="@+id/app1"
+        android:title="1" />
+    <item
+        android:id="@+id/app2"
+        android:title="2" />
+    <item
+        android:id="@+id/app3"
+        android:title="3" />
+    <item
+        android:id="@+id/app4"
+        android:title="4" />
+    <item
+        android:id="@+id/app5"
+        android:title="5" />
+</menu>

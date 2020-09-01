@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CharacterDetail_Fragment_Layout">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.breakingbad_codetest.viewmodel.CharacterDetailViewModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".SecondFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:background="@drawable/textview_border"
+                android:text="@{viewModel.selectedProperty.name}"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Walter White" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                app:imageUrl="@{viewModel.selectedProperty.img}"
+                app:layout_constraintDimensionRatio="h,4:5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_name"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/image">
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Status : `+ viewModel.selectedProperty.status}"
+                    android:textColor="@color/grey"
+                    android:textSize="20sp"
+                    tools:text="Status" />
+
+                <TextView
+                    android:id="@+id/nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Nick name : `+ viewModel.selectedProperty.nickname}"
+                    android:textColor="@color/grey"
+                    android:textSize="20sp"
+                    tools:text="Nick name" />
+
+                <TextView
+                    android:id="@+id/occupation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Occupations : `+ viewModel.selectedProperty.occupation.toString().replace(`[`, ``).replace(`]`,``.trim())}"
+                    android:textColor="@color/grey"
+                    android:textSize="20sp"
+                    tools:text="Occupation" />
+
+                <TextView
+                    android:id="@+id/appearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@{`Appeared in Seasons : `+ viewModel.selectedProperty.appearance.toString().replace(`[`, ``).replace(`]`,``.trim())}"
+                    android:textColor="@color/grey"
+                    android:textSize="20sp"
+                    tools:text="Appearance" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
