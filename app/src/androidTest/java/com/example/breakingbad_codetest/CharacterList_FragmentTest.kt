@@ -138,9 +138,6 @@ class CharacterList_FragmentTest : KoinTest {
         fakeAllItemsSearch.postValue(items)
     }
 
-    private fun emitNavigateToSelectedProperty(databaseCharacter: DatabaseCharacter){
-        fakeNavigateToSelectedProperty.postValue(databaseCharacter)
-    }
     private fun emitLoadingState(loadingState: LoadingState){
         fakeLoadingState.postValue(loadingState)
     }

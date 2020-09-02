@@ -1,7 +1,6 @@
 package com.example.breakingbad_codetest.repository
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import androidx.work.impl.utils.LiveDataUtils
 import com.example.breakingbad_codetest.database.DatabaseCharacter
 import com.example.breakingbad_codetest.network.service.BreakingBad_APIServices
 import kotlinx.coroutines.CompletableDeferred
@@ -38,7 +37,7 @@ class CharactersRepositoryTest : DatabaseTest() {
     }
 
     @Test
-    fun test_login_repo_retrieves_expected_data() =
+    fun test_character_repo_retrieves_expected_data() =
         runBlocking {
             val fakeToReturn =
                 CompletableDeferred(FakeObjectsUtils.listDBDatabaseCharacter)
