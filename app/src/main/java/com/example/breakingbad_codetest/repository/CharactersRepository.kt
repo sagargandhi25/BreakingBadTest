@@ -5,9 +5,6 @@ import com.example.breakingbad_codetest.database.CharacterDatabase
 import com.example.breakingbad_codetest.database.DatabaseCharacter
 import com.example.breakingbad_codetest.network.service.BreakingBad_APIServices
 import com.example.breakingbad_codetest.util.OpenForTesting
-import com.example.breakingbad_codetest.util.networkutils.LoadingState
-
-
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import timber.log.Timber
