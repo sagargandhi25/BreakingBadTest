@@ -25,7 +25,7 @@
   <li>|--viewmodel ->CharacterListViewModel- LiveData has been used for search, it observes the search items and update the displayed items when search results change  
     It has been used for filter, it observes the filtered items and update the displayed items when result chnage
     It has been used for observe loading set and display progress bar</li>
-  <li>|--viewmodel -> CharacterDetailViewMOdel - Here, LiveData has been used for observe selected Character </li>
+  <li>|--viewmodel -> CharacterDetailViewModel - Here, LiveData has been used for observe selected Character </li>
   </ul>
   
   #### ViewModel 
