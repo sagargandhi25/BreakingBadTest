@@ -5,20 +5,8 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.lang.reflect.Type
 
-//Room does not provide abstracts for easily dealing with non primative types, so serialization to string is needed
+//Room does not provide abstracts for easily dealing with non primitive types, so serialization to string is needed
 class Converters {
-
-//    @TypeConverter
-//    fun fromString(value: String): List<String> {
-//        val listType = object : TypeToken<List<String>>() {
-//        }.type
-//        return Gson().fromJson(value, listType)
-//    }
-//    @TypeConverter
-//    fun fromArrayList(list: List<String>): String {
-//        val gson = Gson()
-//        return gson.toJson(list)
-//    }
 
     companion object {
         var gson = Gson()

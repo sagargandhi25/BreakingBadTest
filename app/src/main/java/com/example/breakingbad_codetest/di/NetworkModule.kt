@@ -3,7 +3,6 @@ package com.example.breakingbad_codetest.di
 import android.app.Application
 import android.util.Log
 import com.example.breakingbad_codetest.network.service.API_CALLS
-import com.example.breakingbad_codetest.network.service.BreakingBad_APIServices
 import com.google.gson.FieldNamingPolicy
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -11,11 +10,10 @@ import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterF
 import okhttp3.Cache
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import org.koin.android.ext.koin.androidApplication
 import org.koin.dsl.module
 import retrofit2.Retrofit
+import org.koin.android.ext.koin.androidApplication
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.converter.moshi.MoshiConverterFactory
 
 val netModule = module {
     fun provideCache(application: Application): Cache {

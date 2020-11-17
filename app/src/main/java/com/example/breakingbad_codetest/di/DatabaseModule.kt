@@ -1,6 +1,5 @@
 package com.example.breakingbad_codetest.di
 
-
 import android.app.Application
 import androidx.room.Room
 import com.example.breakingbad_codetest.database.CharacterDao

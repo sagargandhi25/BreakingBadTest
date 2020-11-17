@@ -2,9 +2,7 @@ package com.example.breakingbad_codetest.util
 
 import android.app.Application
 import android.content.Context
-import android.net.http.HttpResponseCache.install
 import android.os.Bundle
-import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnitRunner
 
 class TestAppJUnitRunner : AndroidJUnitRunner() {

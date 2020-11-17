@@ -9,8 +9,6 @@ import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.junit.runner.RunWith
-import org.junit.runners.JUnit4
 import org.mockito.Mock
 import org.mockito.Mockito
 import org.mockito.MockitoAnnotations
@@ -21,6 +19,7 @@ class CharactersRepositoryTest : DatabaseTest() {
 
     @Mock
     lateinit var breakingbadApiservices: BreakingBad_APIServices
+
 
     @get:Rule
     var instantExecutorRule = InstantTaskExecutorRule()

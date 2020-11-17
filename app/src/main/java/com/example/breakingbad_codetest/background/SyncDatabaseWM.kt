@@ -9,7 +9,7 @@ import org.koin.core.inject
 import timber.log.Timber
 
 /**
- * WorkManager automatically calls Worker.doWork() on a background thread.
+ * WorkManager automatically calls Worker.doWork() on a background thread
  * Periodically syncing application data with a server
  */
 class SyncDatabaseWM (appContext: Context, params:WorkerParameters): CoroutineWorker(appContext, params),

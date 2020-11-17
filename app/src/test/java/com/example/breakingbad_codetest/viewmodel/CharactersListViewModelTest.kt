@@ -4,7 +4,6 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MediatorLiveData
 import com.example.breakingbad_codetest.repository.CharactersRepository
 import com.example.breakingbad_codetest.repository.LiveDataTestUtil
-import com.example.breakingbad_codetest.util.EspressoIdlingResourceRule
 import com.example.breakingbad_codetest.util.networkutils.LoadingState
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.*
@@ -14,7 +13,6 @@ import org.junit.Test
 import org.mockito.Mock
 import org.mockito.Mockito
 import org.mockito.MockitoAnnotations
-import java.io.IOException
 import java.lang.RuntimeException
 
 class CharactersListViewModelTest {
@@ -28,7 +26,7 @@ class CharactersListViewModelTest {
 
     @Before
     fun init() {
-        MockitoAnnotations.initMocks(this);
+        MockitoAnnotations.initMocks(this)
     }
 
     @Test

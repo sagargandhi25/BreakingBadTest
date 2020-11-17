@@ -6,7 +6,6 @@ import androidx.annotation.RequiresApi
 import androidx.work.*
 import com.example.breakingbad_codetest.background.SyncDatabaseWM
 import com.example.breakingbad_codetest.di.*
-
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

@@ -1,6 +1,5 @@
 package com.example.breakingbad_codetest.di
 
-
 import com.example.breakingbad_codetest.database.CharacterDatabase
 import com.example.breakingbad_codetest.network.service.BreakingBad_APIServices
 import com.example.breakingbad_codetest.repository.CharactersRepository

@@ -3,15 +3,12 @@ package com.example.breakingbad_codetest.viewmodel
 import androidx.lifecycle.*
 import com.example.breakingbad_codetest.database.DatabaseCharacter
 import com.example.breakingbad_codetest.repository.CharactersRepository
-import com.example.breakingbad_codetest.util.EspressoIdlingResource
 import com.example.breakingbad_codetest.util.OpenForTesting
 import com.example.breakingbad_codetest.util.networkutils.LoadingState
-
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
-import java.io.IOException
 import java.lang.Exception
 
 @OpenForTesting

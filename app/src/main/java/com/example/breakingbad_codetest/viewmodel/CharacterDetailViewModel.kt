@@ -1,6 +1,5 @@
 package com.example.breakingbad_codetest.viewmodel
 
-import android.app.Application
 import androidx.lifecycle.*
 import com.example.breakingbad_codetest.database.DatabaseCharacter
 
